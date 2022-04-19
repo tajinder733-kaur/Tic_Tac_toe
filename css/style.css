@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+body {
+	top: 0px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+
+}
+.container{
+    max-width: 1100px;
+	width: 100%;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+nav{
+    background: linear-gradient(294.28deg, #C8DCE6 0%, #B6CCDA 100%);
+    color: #fff;
+    height: 40px;
+    padding-left: 22px;
+    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+    margin-bottom: 48px;
+
+}
+.game-con-main
+{
+    display:flex;
+    justify-content: center;
+    
+}
+.game-sec
+{
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+}
+.box{
+    border: 2px solid #B6CCDA;
+}
+.game-info-sec{
+    padding-left: 24px;
+}
+.bttn{
+    padding: 5px 15px;
+    background-color: #B6CCDA;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 16px;
+}
+.box-txt{
+    font-size: 6.5vw;
+    display: flex;
+    justify-content: center;
+}
+.box-txt:hover{
+    background-color:#B6CCDA ;
+}
+.br-lt{
+    border-left: 0;
+    border-top: 0;
+}
+.b-t{
+    border-top: 0;  
+}
+.br-tr
+{
+    border-right: 0;
+    border-top: 0;
+}
+.br-l{
+    border-left:0;
+}
+.br-l-b{
+    border-left:0;
+    border-bottom:0; 
+}
+.br-b{
+    border-bottom:0; 
+}
+.br-r-b{
+    border-bottom:0; 
+    border-right:0;  
+}
+.br-r{
+    border-right: 0;
+}
+.game-info-head-sec{
+    margin-bottom: 10px;
+}
+img{
+    width: 100%;
+    max-width: 176px;
+}
+li{
+    font-size: 2vw;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .game-con-main{
+        flex-wrap: wrap;
+    }
+    .game-sec {
+        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(3, 20vw);
+    }
+    li{
+        font-size: 5vw;
+    }
+    .box-txt {
+        font-size: 12.5vw;
+    } 
+    .game-info-head-sec {
+        margin-top: 18px;
+    }
+    
+}
